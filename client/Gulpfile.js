@@ -4,7 +4,7 @@ var source 		= require('vinyl-source-stream')
 var babelify 	= require('babelify')
 var browserify  = require('browserify')
 
-gulp.task('react', function(){
+gulp.task('react', function(){							  
 	return browserify('./clientReact/main.js')
 	.transform('babelify', {presets: ["react"]})
 	.bundle()
