@@ -2,8 +2,8 @@
 require 'sinatra/base'
 
 #require controllers
-require 'ApplicationController'
-require 'CharacterController'
+require './controllers/ApplicationController'
+require './controllers/CharacterController'
 
 #require models
 require './models/CharacterModel'
